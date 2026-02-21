@@ -1,0 +1,17 @@
+.env
+.env.save
+.venv/
+.browser-profile/
+debug/
+__pycache__/
+*.pyc
+.claude/
+
+# Debug/test scripts
+debug_*.py
+test_one_cart.py
+find_monitors.py
+add_to_cart.py
+
+# Output files
+results_*.json
