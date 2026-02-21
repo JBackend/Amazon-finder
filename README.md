@@ -5,22 +5,20 @@ Search Amazon.ca and add items to cart from your phone via Telegram.
 ## Setup
 
 ```bash
-cd /Users/jb/Desktop/Apps/Amazon-finder
+git clone https://github.com/JBackend/Amazon-finder.git
+cd Amazon-finder
 
-# Create virtual environment (one time)
+# Create virtual environment and install dependencies
 python3 -m venv .venv
-
-# Install dependencies (one time)
 source .venv/bin/activate
 pip install -r requirements.txt
 playwright install chromium
+
+# Add your Telegram bot token
+cp .env.example .env
 ```
 
-Add your Telegram bot token to `.env`:
-
-```
-TELEGRAM_BOT_TOKEN=your_token_here
-```
+Edit `.env` and replace `your_token_here` with your bot token from [@BotFather](https://t.me/BotFather).
 
 ## Run
 
